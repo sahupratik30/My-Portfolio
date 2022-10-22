@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@layer components {
+  nav li {
+    @apply cursor-pointer hover:text-portfolio-orange transition duration-200 text-lg;
+  }
+  .active-link {
+    @apply font-semibold text-portfolio-orange;
+  }
+  .mobile-menu {
+    @apply translate-x-[110%];
+  }
+  .slide-in {
+    @apply translate-x-0.5;
+  }
+  .btn {
+    @apply px-3 py-2 xs:px-4 xs:py-3 md:px-5 md:py-4 rounded-full text-[14px] xs:text-base md:text-lg transition-all duration-100 shadow-md;
+  }
+  .btn-primary {
+    @apply bg-portfolio-orange border-2 border-portfolio-orange text-white hover:bg-transparent hover:text-black dark:hover:text-portfolio-white hover:border-black dark:hover:border-portfolio-white;
+  }
+  .btn-secondary {
+    @apply hover:bg-portfolio-orange border-2 hover:border-portfolio-orange dark:hover:border-portfolio-orange hover:text-white bg-transparent text-black dark:text-portfolio-white border-black dark:border-portfolio-white;
+  }
+  .subheading {
+    @apply text-portfolio-black dark:text-portfolio-white text-2xl xs:text-4xl md:text-5xl font-extrabold;
+  }
+  .timeline {
+    @apply container flex flex-col relative gap-8 xs:gap-10 mt-16 xs:mt-20 md:mt-28;
+  }
+  .timeline-line {
+    @apply w-1 h-full absolute left-[20px] xs:left-[22px] -z-10 bg-portfolio-light-grey dark:bg-light-black inset-0 md:mx-auto md:left-0 md:right-0;
+  }
+  .timeline-circle {
+    @apply h-3 w-3 xs:h-4 xs:w-4 rounded-full bg-portfolio-orange md:absolute md:mx-auto md:left-0 md:right-0;
+  }
+  .timeline-container {
+    @apply relative md:w-1/2 md:ml-auto md:pt-3 pl-4 xs:pl-6;
+  }
+  .timeline-container-left {
+    @apply md:ml-0 md:mr-auto md:pl-0 md:pr-6;
+  }
+  .timeline-card {
+    @apply bg-portfolio-light-grey dark:bg-light-black p-3 rounded-md
+    bg-portfolio-light-grey dark:bg-light-black p-3 rounded-md;
+  }
+  .skills-container {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10;
+  }
+  .category-btn {
+    @apply border-2 bg-transparent text-black dark:text-portfolio-white border-black dark:border-portfolio-white shadow-none;
+  }
+  .category-btn.active {
+    @apply bg-portfolio-orange border-portfolio-orange text-white;
+  }
+  .project-category-container {
+    @apply flex flex-wrap mx-auto justify-center items-center gap-4 mt-8 xs:mt-10 md:mt-14;
+  }
+  .project-container {
+    @apply container mt-16 xs:mt-20 md:mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  .project {
+    @apply flex flex-col items-center justify-center bg-gradient-to-r from-[#77A4F2] to-portfolio-orange rounded-md py-10;
+  }
+  .project-name {
+    @apply font-bold text-xl xs:text-2xl md:text-3xl text-portfolio-white;
+  }
+  .project-tech {
+    @apply text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-2;
+  }
+  .project-links-wrapper {
+    @apply flex gap-10 items-center text-portfolio-white mt-10;
+  }
+  .project-live-link {
+    @apply text-[14px] xs:text-base md:text-lg hover:text-portfolio-black transition duration-200;
+  }
+  .project-github-link {
+    @apply text-lg xs:text-xl md:text-2xl hover:text-portfolio-black transition duration-200;
+  }
+  .socials-container {
+    @apply container flex flex-col md:flex-row gap-20 md:gap-24 lg:gap-44 mt-16 xs:mt-20 md:mt-28 justify-center;
+  }
+  .social-icon-container {
+    @apply w-8 h-8 p-10 flex items-center rounded-full justify-center bg-portfolio-light-grey dark:bg-light-black;
+  }
+  .social-name {
+    @apply mt-4 text-portfolio-black dark:text-portfolio-white font-bold uppercase text-[14px] xs:text-base md:text-lg;
+  }
+  .social-text {
+    @apply mt-1 text-portfolio-black dark:text-portfolio-white text-[14px] xs:text-base md:text-lg;
+  }
+  .contact-form {
+    @apply bg-portfolio-light-grey dark:bg-light-black rounded-md flex flex-col items-center p-5 gap-5 xs:p-6 xs:gap-6 md:p-10 md:gap-10 w-full md:w-3/5;
+  }
+  .contact-input {
+    @apply outline-none bg-portfolio-white text-[14px] xs:text-base md:text-lg p-1.5 xs:p-2 md:p-3 rounded-md w-full border border-transparent;
+  }
+  input.invalid,
+  textarea.invalid {
+    @apply border-red-500;
+  }
+  .error-msg {
+    @apply absolute left-0 -bottom-4 md:-bottom-6 text-[10px] xs:text-xs md:text-sm text-red-600;
+  }
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link href="/dist/build.css" rel="stylesheet" />
+    <script type="module" src="./js/script.js" defer></script>
+    <title>Pratik Sahu</title>
+  </head>
+  <body class="relative font-Poppins overflow-x-hidden dark:bg-portfolio-black">
+    <!-- Header -->
+    <header
+      class="section sticky top-[0px] z-10 bg-portfolio-white dark:bg-portfolio-black"
+    >
+      <nav class="container flex justify-start py-3 sm:py-5">
+        <h1
+          class="text-portfolio-black dark:text-portfolio-white xs:text-xl md:text-2xl font-extrabold uppercase"
+        >
+          <span class="text-portfolio-orange">P</span>ratik.
+        </h1>
+        <ul
+          class="hidden md:flex flex-1 gap-5 text-portfolio-black dark:text-portfolio-white items-center justify-end"
+        >
+          <li class="home active-link">
+            <a href="#">Home</a>
+          </li>
+          <li class="about"><a href="#about">About</a></li>
+          <li class="experience"><a href="#experience">Experience</a></li>
+          <li class="skills"><a href="#skills">Skills</a></li>
+          <li class="projects"><a href="#projects">Projects</a></li>
+          <li class="contact"><a href="#contact">Contact</a></li>
+          <i
+            class="cursor-pointer sm:text-xl moon dark-mode-toggle fa-solid fa-moon"
+          ></i>
+          <i
+            class="cursor-pointer sm:text-xl sun dark-mode-toggle fa-solid text-portfolio-orange fa-sun"
+          ></i>
+        </ul>
+        <div class="flex flex-1 md:hidden justify-end items-center">
+          <i
+            class="sm:text-xl dark:text-portfolio-white text-portfolio-black menu-btn fa-solid fa-bars"
+          ></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Mobile menu -->
+    <div
+      class="z-30 mobile-menu transition-transform duration-500 md:hidden fixed top-0 right-0 w-4/6 h-screen flex bg-portfolio-black dark:bg-portfolio-white text-white dark:text-portfolio-black"
+    >
+      <ul
+        class="relative text-[14px] xs:text-base flex flex-1 flex-col gap-5 pl-5 pt-5"
+      >
+        <li class="home active-link">
+          <a href="#">Home</a>
+        </li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="experience"><a href="#experience">Experience</a></li>
+        <li class="skills"><a href="#skills">Skills</a></li>
+        <li class="projects"><a href="#projects">Projects</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-moon moon"></i>
+        <i class="fa-solid fa-sun sun text-portfolio-orange"></i>
+        <div class="flex justify-center items-center absolute top-2 right-3">
+          <i
+            class="close-menu-btn text-white dark:text-portfolio-black text-lg fa-solid fa-xmark"
+          ></i>
+        </div>
+      </ul>
+    </div>
+    <!-- Hero Section -->
+    <section class="section mt-24 md:mt-16" id="home">
+      <div class="container flex flex-col md:flex-row items-center">
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center md:items-start">
+          <p
+            class="text-portfolio-orange text-[14px] xs:text-base md:text-lg tracking-[.2em] mb-4"
+          >
+            Welcome to my portfolio!
+          </p>
+          <h1
+            class="text-4xl xs:text-5xl text-center dark:text-portfolio-white text-portfolio-black md:text-left md:text-6xl mb-4 font-extrabold"
+          >
+            Hi! I’m
+            <span class="text-portfolio-orange">Pratik Sahu</span>
+          </h1>
+          <h2
+            class="text-[20px] xs:text-2xl text-portfolio-black dark:text-portfolio-white md:text-3xl text-center md:text-left mb-8 font-medium"
+          >
+            A frontend developer
+          </h2>
+          <div
+            class="flex flex-col items-center gap-5 s:flex-row md:items-start"
+          >
+            <a
+              href="./assets/Pratik_Sahu_YOP2023.pdf"
+              class="btn btn-primary"
+              download="Pratik_Sahu_YOP2023.pdf"
+              >Download Resume</a
+            >
+            <a href="#projects" class="btn btn-secondary">My works</a>
+          </div>
+        </div>
+        <div class="hidden md:flex flex-1 items-center justify-end">
+          <img src="./images/hero-img.png" class="w-5/6" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="section md:mt-40 mt-24" id="about">
+      <div class="container flex flex-col md:flex-row items-start">
+        <div class="hidden md:flex flex-1 items-center justify-start">
+          <img src="./images/about-img.png" class="w-5/6" alt="" />
+        </div>
+        <div class="max-w-full flex flex-1 flex-col justify-start">
+          <h2 class="text-center md:text-left subheading">About Me</h2>
+          <p
+            class="w-full text-portfolio-grey mt-6 text-center md:text-justify leading-relaxed text-[14px] xs:text-base md:text-lg"
+          >
+            I am a front-end developer passionate about learning and exploring
+            various technologies across the web. I convert designs into
+            beautiful-looking websites. Being experienced in multiple
+            web-related technologies, I love building solutions that inspire.
+          </p>
+          <div
+            class="flex flex-col items-start gap-4 mt-12 text-[14px] xs:text-base md:text-lg"
+          >
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >Name: </span
+              ><span class="w-2/3 break-words">Pratik Sahu</span>
+            </p>
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >Date of birth: </span
+              ><span class="w-2/3 break-words">April 03, 2001</span>
+            </p>
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-50 w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >E-mail: </span
+              ><span class="w-2/3 break-words">sahupratik30@gmail.com</span>
+            </p>
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >LinkedIn: </span
+              ><span class="w-2/3 break-words"
+                ><a
+                  href="https://www.linkedin.com/in/pratiksahu01"
+                  class="underline"
+                  target="_blank"
+                  >linkedin.com/in/pratiksahu01</a
+                ></span
+              >
+            </p>
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >GitHub: </span
+              ><span class="w-2/3 break-words"
+                ><a
+                  href="https://github.com/sahupratik30"
+                  class="underline"
+                  target="_blank"
+                  >github.com/sahupratik30</a
+                ></span
+              >
+            </p>
+            <p class="text-portfolio-grey flex w-full">
+              <span
+                class="w-1/3 font-semibold text-portfolio-black dark:text-portfolio-white"
+                >Phone: </span
+              ><span class="w-2/3 break-words">+917608998089</span>
+            </p>
+
+            <a
+              href="#contact"
+              class="mx-auto md:ml-0 btn btn-primary mt-6 md:mt-12"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience -->
+    <section class="section md:mt-40 mt-24" id="experience">
+      <h2 class="subheading text-center">My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="relative">
+          <div aria-hidden="true" class="timeline-circle"></div>
+          <div class="timeline-container">
+            <div class="timeline-card">
+              <p
+                class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+              >
+                UI Developer Trainee
+              </p>
+              <p
+                class="text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                Makos Infotech Pvt. Ltd
+              </p>
+              <p
+                class="font-semibold text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                Apr 2022 - Oct 2022
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-6"
+              >
+                Trident Academy Of Technology
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                2019 - 2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div aria-hidden="true" class="timeline-circle"></div>
+          <div class="timeline-container timeline-container-left">
+            <div class="timeline-card">
+              <p
+                class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+              >
+                Project Intern
+              </p>
+              <p
+                class="text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                Ziroh Labs
+              </p>
+              <p
+                class="font-semibold text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                Feb 2022 - Apr 2022
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-6"
+              >
+                Trident Academy Of Technology
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                2019 - 2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div aria-hidden="true" class="timeline-circle"></div>
+          <div class="timeline-container">
+            <div class="timeline-card">
+              <p
+                class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+              >
+                B.Tech
+              </p>
+              <p
+                class="text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                Computer Science and Engineering
+              </p>
+              <p
+                class="font-semibold text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                9.00 CGPA
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-6"
+              >
+                Trident Academy Of Technology
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                2019 - 2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div aria-hidden="true" class="timeline-circle"></div>
+          <div class="timeline-container timeline-container-left">
+            <div class="timeline-card">
+              <p
+                class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+              >
+                Higher Secondary, 12th
+              </p>
+              <p
+                class="text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                CBSE
+              </p>
+              <p
+                class="font-semibold text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                77.2%
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-6"
+              >
+                Mother's Public School
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                2018 - 2019
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div aria-hidden="true" class="timeline-circle"></div>
+          <div class="timeline-container">
+            <div class="timeline-card">
+              <p
+                class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+              >
+                High School, 10th
+              </p>
+              <p
+                class="text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                ICSE
+              </p>
+              <p
+                class="font-semibold text-portfolio-grey text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                91.5%
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px] mt-6"
+              >
+                Vikash Convent School
+              </p>
+              <p
+                class="font-extralight italic text-portfolio-black dark:text-portfolio-white text-[10px] xs:text-[12px] md:text-[14px]"
+              >
+                2016 - 2017
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section class="section md:mt-40 mt-24" id="skills">
+      <h2 class="subheading text-center">Skills</h2>
+      <div class="container mt-16 xs:mt-20 md:mt-28">
+        <div class="skills-container">
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/html-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              HTML
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/css-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              CSS
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/js-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              JavaScript
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/react-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              ReactJS
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/bootstrap-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              Bootstrap
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/sass-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              Sass
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/jquery-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              jQuery
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/tailwind-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              TailwindCSS
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/figma-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              Figma
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <img
+              src="./images/redux-icon.png"
+              alt=""
+              class="w-[68px] h-[68px] xs:w-[88px] xs:h-[88px] md:w-[108px] md:h-[108px]"
+            />
+            <p
+              class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
+            >
+              Redux
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class="section md:mt-40 mt-24" id="projects">
+      <h2 class="subheading text-center">Projects</h2>
+      <div class="project-category-container">
+        <button class="btn category-btn">All</button>
+        <button class="btn category-btn">VanillaJS</button>
+        <button class="btn category-btn">ReactJS</button>
+        <button class="btn category-btn">HTML&CSS</button>
+        <button class="btn category-btn">FullStack</button>
+      </div>
+      <div class="project-container"></div>
+      <button
+        class="btn btn-primary mt-16 xs:mt-20 md:mt-28 ml-[50%] -translate-x-[50%] show-more"
+      >
+        Show More
+      </button>
+    </section>
+    <!-- Contact -->
+    <section class="section md:mt-40 mt-24" id="contact">
+      <h2 class="subheading text-center">Get In Touch</h2>
+      <div class="socials-container">
+        <div class="flex flex-col items-center min-w-max">
+          <div class="social-icon-container">
+            <i
+              class="fa-solid fa-lg fa-phone text-portfolio-orange text-2xl"
+            ></i>
+          </div>
+          <p class="social-name">contact number</p>
+          <p class="social-text">+917608998089</p>
+        </div>
+        <div class="flex flex-col items-center min-w-max">
+          <div class="social-icon-container">
+            <i
+              class="fa-solid fa-lg fa-envelope text-portfolio-orange text-2xl"
+            ></i>
+          </div>
+          <p class="social-name">e-mail address</p>
+          <p class="social-text">sahupratik30@gmail.com</p>
+        </div>
+        <div class="flex flex-col items-center min-w-max">
+          <div class="social-icon-container">
+            <i
+              class="fa-brands fa-lg fa-linkedin-in text-portfolio-orange text-2xl"
+            ></i>
+          </div>
+          <p class="social-name">linkedin profile</p>
+          <p class="social-text">linkedin.com/in/pratiksahu01/</p>
+        </div>
+      </div>
+      <div class="container flex justify-center mt-16 xs:mt-20 md:mt-28">
+        <form
+          action="https://formsubmit.co/dbd7a9d3d1e01b50a5ad106413661e62"
+          method="post"
+          class="contact-form"
+        >
+          <div class="w-full relative">
+            <input
+              type="text"
+              name="Name"
+              id="name"
+              class="contact-input dark:bg-portfolio-light-grey"
+              placeholder="Your Name"
+            />
+            <span id="name-error" class="error-msg"></span>
+          </div>
+          <div class="w-full relative">
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              class="contact-input dark:bg-portfolio-light-grey"
+              placeholder="Your Email"
+            />
+            <span id="email-error" class="error-msg"></span>
+          </div>
+          <div class="w-full relative">
+            <input
+              type="text"
+              name="Subject"
+              id="subject"
+              class="contact-input dark:bg-portfolio-light-grey"
+              placeholder="Subject"
+            />
+            <span id="subject-error" class="error-msg"></span>
+          </div>
+          <div class="w-full relative">
+            <textarea
+              name="Message"
+              id="message"
+              rows="5"
+              class="contact-input dark:bg-portfolio-light-grey resize-none"
+              placeholder="Message"
+            ></textarea>
+            <span id="message-error" class="error-msg"></span>
+          </div>
+          <input type="hidden" name="_subject" id="form-subject" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/src/thank-you.html"
+          />
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-portfolio-black dark:bg-light-black h-16 xs:h-20 md:mt-40 mt-24 flex justify-center items-center"
+    >
+      <p class="text-portfolio-white text-[14px] xs:text-base md:text-lg">
+        Portfolio made with ❤ by
+        <span class="text-portfolio-orange">Pratik Sahu</span>
+      </p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
