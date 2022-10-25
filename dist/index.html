@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <link href="./build.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" src="./js/script.js" defer></script>
     <title>Pratik Sahu</title>
   </head>
@@ -76,7 +77,11 @@
     <section class="section mt-24 md:mt-16" id="home">
       <div class="container flex flex-col md:flex-row items-center">
         <!-- Content -->
-        <div class="flex flex-1 flex-col items-center md:items-start">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          class="flex flex-1 flex-col items-center md:items-start"
+        >
           <p
             class="text-portfolio-orange text-[14px] xs:text-base md:text-lg tracking-[.2em] mb-4"
           >
@@ -105,13 +110,22 @@
             <a href="#projects" class="btn btn-secondary">My works</a>
           </div>
         </div>
-        <div class="hidden md:flex flex-1 items-center justify-end">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          class="hidden md:flex flex-1 items-center justify-end"
+        >
           <img src="./images/hero-img.png" class="w-5/6" alt="" />
         </div>
       </div>
     </section>
     <!-- About Section -->
-    <section class="section md:mt-40 mt-24" id="about">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      class="section md:mt-40 mt-24"
+      id="about"
+    >
       <div class="container flex flex-col md:flex-row items-start">
         <div class="hidden md:flex flex-1 items-center justify-start">
           <img src="./images/about-img.png" class="w-5/6" alt="" />
@@ -191,12 +205,22 @@
     </section>
     <!-- Experience -->
     <section class="section md:mt-40 mt-24" id="experience">
-      <h2 class="subheading text-center">My Journey</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="subheading text-center"
+      >
+        My Journey
+      </h2>
       <div class="timeline">
         <div class="timeline-line"></div>
         <div class="relative">
           <div aria-hidden="true" class="timeline-circle"></div>
-          <div class="timeline-container">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            class="timeline-container"
+          >
             <div class="timeline-card">
               <p
                 class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
@@ -228,7 +252,11 @@
         </div>
         <div class="relative">
           <div aria-hidden="true" class="timeline-circle"></div>
-          <div class="timeline-container timeline-container-left">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="timeline-container timeline-container-left"
+          >
             <div class="timeline-card">
               <p
                 class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
@@ -260,7 +288,11 @@
         </div>
         <div class="relative">
           <div aria-hidden="true" class="timeline-circle"></div>
-          <div class="timeline-container">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            class="timeline-container"
+          >
             <div class="timeline-card">
               <p
                 class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
@@ -292,7 +324,11 @@
         </div>
         <div class="relative">
           <div aria-hidden="true" class="timeline-circle"></div>
-          <div class="timeline-container timeline-container-left">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="timeline-container timeline-container-left"
+          >
             <div class="timeline-card">
               <p
                 class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
@@ -324,7 +360,11 @@
         </div>
         <div class="relative">
           <div aria-hidden="true" class="timeline-circle"></div>
-          <div class="timeline-container">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            class="timeline-container"
+          >
             <div class="timeline-card">
               <p
                 class="font-semibold text-[14px] xs:text-base md:text-lg text-portfolio-black dark:text-portfolio-white"
@@ -358,9 +398,19 @@
     </section>
     <!-- Skills -->
     <section class="section md:mt-40 mt-24" id="skills">
-      <h2 class="subheading text-center">Skills</h2>
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="subheading text-center"
+      >
+        Skills
+      </h2>
       <div class="container mt-16 xs:mt-20 md:mt-28">
-        <div class="skills-container">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          class="skills-container"
+        >
           <div class="flex flex-col items-center gap-4">
             <img
               src="./images/html-icon.png"
@@ -486,15 +536,29 @@
     </section>
     <!-- Projects -->
     <section class="section md:mt-40 mt-24" id="projects">
-      <h2 class="subheading text-center">Projects</h2>
-      <div class="project-category-container">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="subheading text-center"
+      >
+        Projects
+      </h2>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        class="project-category-container"
+      >
         <button class="btn category-btn">All</button>
         <button class="btn category-btn">VanillaJS</button>
         <button class="btn category-btn">ReactJS</button>
         <button class="btn category-btn">HTML&CSS</button>
         <button class="btn category-btn">FullStack</button>
       </div>
-      <div class="project-container"></div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="project-container"
+      ></div>
       <button
         class="btn btn-primary mt-16 xs:mt-20 md:mt-28 ml-[50%] -translate-x-[50%] show-more"
       >
@@ -503,8 +567,18 @@
     </section>
     <!-- Contact -->
     <section class="section md:mt-40 mt-24" id="contact">
-      <h2 class="subheading text-center">Get In Touch</h2>
-      <div class="socials-container">
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="subheading text-center"
+      >
+        Get In Touch
+      </h2>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+        class="socials-container"
+      >
         <div class="flex flex-col items-center min-w-max">
           <div class="social-icon-container">
             <i
@@ -535,6 +609,8 @@
       </div>
       <div class="container flex justify-center mt-16 xs:mt-20 md:mt-28">
         <form
+          data-aos="fade-up"
+          data-aos-duration="1500"
           action="https://formsubmit.co/dbd7a9d3d1e01b50a5ad106413661e62"
           method="post"
           class="contact-form"
@@ -600,5 +676,11 @@
       </p>
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
   </body>
 </html>
