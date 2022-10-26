@@ -5,6 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 @layer components {
+  section {
+    @apply overflow-x-hidden overflow-y-hidden;
+  }
   nav li {
     @apply cursor-pointer hover:text-portfolio-orange transition duration-200 text-lg;
   }
